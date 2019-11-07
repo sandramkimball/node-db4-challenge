@@ -1,6 +1,6 @@
 
 exports.seed = function(knex) {
-  return knex('ingredients').del()
+  return knex('ingredients').truncate()
     .then(function () {
       return knex('ingredients').insert([
         {ing_name: "peanut butter"}, //1
